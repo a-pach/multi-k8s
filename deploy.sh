@@ -1,5 +1,5 @@
 docker build -t apach2019/multi-client:latest -t apach2019/multi-client:$SHA -f ./client/Dockerfile ./client
-docker build -t apach2019/multi-server:latest -t apach2019/multi-server:$SHA f ./server/Dockerfile ./server
+docker build -t apach2019/multi-server:latest -t apach2019/multi-server:$SHA -f ./server/Dockerfile ./server
 docker build -t apach2019/multi-worker:latest -t apach2019/multi-worker:$SHA -f ./worker/Dockerfile ./worker
 
 docker push apach2019/multi-client:latest
